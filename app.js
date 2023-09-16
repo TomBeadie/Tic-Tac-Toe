@@ -1,8 +1,10 @@
 /*-------- Constants --------*/
 
+
+
 const squares = document.querySelectorAll("square");
 
-const gameboard = ["", "", "", "", "", "", "", "", ""];
+const cells = ["", "", "", "", "", "", "", "", ""];
 
 const winningCombos = [
   [0, 1, 2],
@@ -17,13 +19,36 @@ const winningCombos = [
 
 /*-------- Variables (State) --------*/
 
+
+
 const player1 = "X";
-const player1 = "O";
+const player2 = "O";
 
 /*-------- Cached Element References --------*/
 
-/*-------- Event Listeners --------*/
+const gameBoard = document.querySelector('.gameboard');
 
-gameboard.addEventListener("click", handleClick);
+/*-------- Event Listeners --------*
+console.log('sanity');
+
+// gameBoard.addEventListener("click", handleClick);
 
 /*-------- Functions --------*/
+
+// Call the function
+startGame();
+
+
+// Entire game function
+function startGame(){
+    console.log(start)
+
+// When I click within a square, I want some shit to appear on screen
+// Let's grab that square by it's ID and 
+
+
+
+
+};
+
+console.log(startGame)
