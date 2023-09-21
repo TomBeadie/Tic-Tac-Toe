@@ -40,13 +40,31 @@ console.log(squareEls)
 init()
 
 function init() {
-board = [null, null, null, null, null, null, null, null, null]
+board = [1, -1, null, null, null, null, null, null, null]
 turn = 1
 winner = false
 tie = false
+render()
 }
 
+function render() {
+  updateBoard()
+}
 
+function updateBoard(){
+  board.forEach(function(boardVal, idx) {
+    if (board[idx] === 1) {
+      // Must display an X
+      console.log('X')
+    } else if (board[idx] === -1) {
+      // Must display an O
+      console.log('O')
+    } else {
+      // Must display an empty square
+      console.log('blank')
+    }
+  })
+}
 
 
 
