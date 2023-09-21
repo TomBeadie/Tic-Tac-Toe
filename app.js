@@ -56,13 +56,16 @@ function updateBoard(){
     if (board[idx] === 1) {
       // Must display an X
       squareEls[idx].textContent = 'X'
+      squareEls[idx].style.backgroundColor = 'red'
       console.log('X')
     } else if (board[idx] === -1) {
       // Must display an O
       squareEls[idx].textContent = 'O'
+      squareEls[idx].style.backgroundColor = 'blue'
       console.log('O')
     } else {
       // Must display an empty square
+      squareEls[idx].textContent = ''
       console.log('blank')
     }
   })
