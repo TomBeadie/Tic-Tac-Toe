@@ -55,9 +55,11 @@ function updateBoard(){
   board.forEach(function(boardVal, idx) {
     if (board[idx] === 1) {
       // Must display an X
+      squareEls[idx].textContent = 'X'
       console.log('X')
     } else if (board[idx] === -1) {
       // Must display an O
+      squareEls[idx].textContent = 'O'
       console.log('O')
     } else {
       // Must display an empty square
