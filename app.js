@@ -1,10 +1,10 @@
 /*-------- Constants --------*/
 
 // We need to say the game is running, until it's not- which could be a win/loss/tie, pausing the game
-let running = true;
 
-const gameBoard = document.querySelector("gameBoard");
-const squares = document.querySelectorAll(".square");
+
+const squares = document.querySelectorAll(".sqr");
+const gameBoard = document.querySelector("message");
 
 const cells = ["", "", "", "", "", "", "", "", ""];
 
@@ -30,15 +30,22 @@ const drawMessage = "Tie";
 
 /*-------- Cached Element References --------*/
 
+
+const squareEls = document.querySelectorAll('.sqr')
+console.log(squareEls)
+
 /*-------- Event Listeners --------*/
 
 /*-------- Functions --------*/
+init()
 
-// squares.forEach(square => {
-//     square.addEventListener('click', onClick= () => console.log('You clicked me'));
-// });
+function init() {
+board = [null, null, null, null, null, null, null, null, null]
+turn = 1
+winner = false
+tie = false
+}
 
-// if
 
 
 
