@@ -10,9 +10,11 @@ We've all played this game on a restaurant napkin at some point.
 
 # Screenshots
 ----
+[Favicon](images/favicon.png)
+
 [Play screen](images/game-board.png)
 
-[Favicon]
+[Palette](images/Pallete.png)
 
 # Technology
 ----

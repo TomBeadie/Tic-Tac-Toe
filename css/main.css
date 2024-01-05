@@ -1,5 +1,5 @@
 body {
-  background-color: #92919b;
+  background-color: #080436;
   display: flex;
   margin: 0;
   height: 100vh;
@@ -33,4 +33,9 @@ body {
 .reset {
   height: 50px;
   width: 100px;
+}
+
+.button {
+  margin-top: 1rem;
+  border-radius: 1rem;
 }
