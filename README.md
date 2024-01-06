@@ -2,7 +2,7 @@
 ----
 [Play]()
 
-We've all played this game on a restaurant napkin at some point.
+Restaurant napkin game.
 
 # Wireframes and Planning
 ----

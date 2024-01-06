@@ -1,14 +1,16 @@
 body {
   background-color: #080436;
+  color: white;
   display: flex;
   margin: 0;
   height: 100vh;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .message-container {
-  background-color: rgb(169, 149, 205);
+  background-color: rgb(113, 187, 44);
   position: absolute;
   top: 10px;
   left: 10px;
@@ -16,26 +18,76 @@ body {
 }
 
 .board {
+  /* background-color: rgb(85, 61, 61);
   display: grid;
   grid-template-rows: repeat(3, 10vmin);
   grid-template-columns: repeat(3, 10vmin);
-  grid-gap: 0vmin;
+  height: 80%;
+  width: 80%; */
+  /* grid-gap: 0vmin; */
+
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.board-row-one {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.board-row-two {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.board-row-three {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .sqr {
+  width: 50%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../images/frost.png");
+  border: solid;
+  border: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.69) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
 }
 
-.reset {
-  height: 50px;
-  width: 100px;
+.sqr:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
-.button {
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  opacity: 80%;
   margin-top: 1rem;
   border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+  position: absolute;
+  height: 300px;
+  width: 300px;
 }

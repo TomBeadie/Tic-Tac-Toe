@@ -61,8 +61,7 @@ function switchPlayerTurn() {
 }
 
 function checkForWinner() {
-  
-  winningCombos.forEach(function(combo) {
+  winningCombos.forEach(function (combo) {
     if (Math.abs(board[combo[0]] + board[combo[1]] + board[combo[2]]) === 3) {
       winner = true;
     }
@@ -87,21 +86,27 @@ function render() {
   updateMessage();
 }
 
+const xIcon = "../images/X.png";
+const oIcon = "../images/O.png";
+
 function updateBoard() {
   board.forEach(function (boardVal, idx) {
     if (boardVal === 1) {
       // Must display an X
-      squareEls[idx].textContent = "X";
-      squareEls[idx].style.backgroundColor = "red";
-    } 
+      squareEls[idx].style.backgroundColor = "rgba(255, 0, 229, 0.4)";
+      const token = document.createElement("img");
+      token.src = xIcon;
+      squareEls[idx].style.backgroundImage = `url(${xIcon})`;
+    }
     if (boardVal === -1) {
       // Must display an O
-      squareEls[idx].textContent = "O";
-      squareEls[idx].style.backgroundColor = "blue";
-    } 
+      squareEls[idx].style.backgroundColor = "rgba(0, 10, 255, 0.4)";
+      const token = document.createElement("img");
+      token.src = oIcon;
+      squareEls[idx].style.backgroundImage = `url(${oIcon})`;
+    }
     if (boardVal === null) {
-      // Must display an empty square
-      squareEls[idx].textContent = "";
+      squareEls[idx].style.backgroundImage = '';
       squareEls[idx].style.backgroundColor = "";
     }
   });
@@ -112,7 +117,6 @@ function updateMessage() {
     // If there's not a winner, and there's not a tie...
     // Another way to write (!winner && !tie) is (if winner === false && tie === false)
     messageEl.textContent = `It's ${turn === 1 ? "X" : "O"}'s turn`;
-    
   } else if (!winner && tie) {
     messageEl.textContent = `It's a tie`;
     resetBtn.removeAttribute("hidden");
