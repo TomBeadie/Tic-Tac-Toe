@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 ----
-[Play]()
+[Play](https://tic-tac-toe-tombeadie.netlify.app/)
 
 Restaurant napkin game.
 
