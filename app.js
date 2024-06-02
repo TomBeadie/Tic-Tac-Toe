@@ -93,14 +93,14 @@ function updateBoard() {
   board.forEach(function (boardVal, idx) {
     if (boardVal === 1) {
       // Must display an X
-      squareEls[idx].style.backgroundColor = "rgba(255, 0, 229, 0.4)";
+      // squareEls[idx].style.backgroundColor = "rgba(255, 0, 229, 0.4)";
       const token = document.createElement("img");
       token.src = xIcon;
       squareEls[idx].style.backgroundImage = `url(${xIcon})`;
     }
     if (boardVal === -1) {
       // Must display an O
-      squareEls[idx].style.backgroundColor = "rgba(0, 10, 255, 0.4)";
+      // squareEls[idx].style.backgroundColor = "rgba(0, 10, 255, 0.4)";
       const token = document.createElement("img");
       token.src = oIcon;
       squareEls[idx].style.backgroundImage = `url(${oIcon})`;

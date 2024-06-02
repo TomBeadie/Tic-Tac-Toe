@@ -8,27 +8,39 @@
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
+    <!--  spline  -->
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.4.3/build/spline-viewer.js"
+    ></script>
+    <spline-viewer
+      loading-anim-type="spinner-small-dark"
+      url="https://prod.spline.design/vN-bx-KcyusJ1G7p/scene.splinecode"
+    ></spline-viewer>
+    <!--  spline  -->
+
     <div class="message-board">
       <div id="message">Message</div>
     </div>
 
     <div class="board">
-      <div class="board-row-one">
+      <div class="board-row">
         <div class="sqr" id="sq0"></div>
         <div class="sqr" id="sq1"></div>
         <div class="sqr" id="sq2"></div>
       </div>
-      <div class="board-row-two">
+      <div class="board-row">
         <div class="sqr" id="sq3"></div>
         <div class="sqr" id="sq4"></div>
         <div class="sqr" id="sq5"></div>
       </div>
-      <div class="board-row-three">
+      <div class="board-row">
         <div class="sqr" id="sq6"></div>
         <div class="sqr" id="sq7"></div>
         <div class="sqr" id="sq8"></div>
       </div>
+
+      <button id="reset-button" hidden>Reset</button>
     </div>
-    <button id="reset-button" hidden>Reset</button>
   </body>
 </html>
