@@ -12,9 +12,7 @@ Restaurant napkin game.
 ----
 [Favicon](images/favicon.png)
 
-[Play screen](images/game-board.png)
-
-[Palette](images/Pallete.png)
+[Play screen](images/background.png)
 
 # Technology
 ----
@@ -28,5 +26,5 @@ Restaurant napkin game.
 
 <a href="a"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/></a>
 
-<a href="a"><img src="images/spline.png"/></a>
+
 

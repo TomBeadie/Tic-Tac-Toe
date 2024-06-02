@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <script defer src="/app.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
@@ -20,10 +21,11 @@
     <!--  spline  -->
 
     <div class="message-board">
-      <div id="message">Message</div>
+      <div id="message"></div>
     </div>
 
     <div class="board">
+      <button id="reset-button" hidden>Reset</button>
       <div class="board-row">
         <div class="sqr" id="sq0"></div>
         <div class="sqr" id="sq1"></div>
@@ -39,8 +41,6 @@
         <div class="sqr" id="sq7"></div>
         <div class="sqr" id="sq8"></div>
       </div>
-
-      <button id="reset-button" hidden>Reset</button>
     </div>
   </body>
 </html>

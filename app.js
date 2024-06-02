@@ -29,10 +29,12 @@ squareEls.forEach(function (squareEl) {
 });
 resetBtn.addEventListener("click", init);
 
+
 /*-------- Functions --------*/
 init();
 
 function init() {
+  messageEl.textContent = ''
   resetBtn.setAttribute("hidden", true);
   board = [null, null, null, null, null, null, null, null, null];
   turn = 1;
@@ -86,8 +88,8 @@ function render() {
   updateMessage();
 }
 
-const xIcon = "../images/X.png";
-const oIcon = "../images/O.png";
+const xIcon = "../images/X.svg";
+const oIcon = "../images/O.svg";
 
 function updateBoard() {
   board.forEach(function (boardVal, idx) {
@@ -107,7 +109,7 @@ function updateBoard() {
     }
     if (boardVal === null) {
       squareEls[idx].style.backgroundImage = '';
-      squareEls[idx].style.backgroundColor = "";
+      squareEls[idx].style.backgroundColor = '';
     }
   });
 }
@@ -115,13 +117,15 @@ function updateBoard() {
 function updateMessage() {
   if (!winner && !tie) {
     // If there's not a winner, and there's not a tie...
-    // Another way to write (!winner && !tie) is (if winner === false && tie === false)
-    messageEl.textContent = `It's ${turn === 1 ? "X" : "O"}'s turn`;
+    
+    // Uncomment code below for a reminder whose turn it is:
+    // messageEl.textContent = `It's ${turn === 1 ? "X" : "O"}'s turn`;
   } else if (!winner && tie) {
-    messageEl.textContent = `It's a tie`;
+    messageEl.textContent = `Tie`;
     resetBtn.removeAttribute("hidden");
   } else {
     messageEl.textContent = `${turn === 1 ? "X" : "O"} wins`;
     resetBtn.removeAttribute("hidden");
+    
   }
 }
