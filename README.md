@@ -10,9 +10,9 @@ Restaurant napkin game.
 
 # Screenshots
 ----
-[Favicon](images/favicon.png)
+![Favicon](images/favicon.ico)
 
-[Play screen](images/background.png)
+![Play screen](images/background.png)
 
 # Technology
 ----
