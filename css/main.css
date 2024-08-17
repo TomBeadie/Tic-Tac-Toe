@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Clash-Display";
   src: url(./fonts/ClashDisplay-Extralight.otf);
-  
 }
 
 body {
@@ -32,7 +31,6 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  max-width: 50vw;
 
   .board-row {
     display: flex;
@@ -84,4 +82,10 @@ button {
   opacity: 80%;
   border: none;
   border-radius: 3.75rem;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #3a0804;
+  }
 }
